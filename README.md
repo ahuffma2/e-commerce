@@ -5,7 +5,12 @@
 
   --------
   ## Installation 
-  Clone Git Repo, Open in IDE of choice, run ```NPM i``` and all relevant packages should be installed. Copy and paste the commands from the /db/schema file and run them in your sql editor of choice. Then, go into the ```env.Example``` file and fill out the details with your sql ```username, password, and 'ecommerce_db'``` for the database name. Next, run ```npm run seed ./seeds/index.js``` in your ide. This will populate your database file. Then run ```npm start``` and you will be live on your server. Test it out on either 3001 or the port specified in the env.
+  * Clone Git Repo, Open in IDE of choice, run ```NPM i``` and all relevant packages should be installed. 
+  * Copy and paste the commands from the /db/schema file and run them in your sql editor of choice. 
+  * Then, go into the ```env.Example``` file and fill out the details with your sql ```username, password, and 'ecommerce_db'``` for the database name. 
+  * Next, run ```npm run seed ./seeds/index.js``` in your ide. This will populate your database file.
+  * Then run ```npm start``` and you will be live on your server. 
+  * Test it out on either 3001 or the port specified in the env.
 
   --------
   ## Questions 
