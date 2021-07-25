@@ -14,22 +14,21 @@ router.get('/', async (req, res) => {
   }
 });
 
-//NEED TO FIX
 router.get('/:id', async (req, res) => {
   // find one category by its `id` value
   // be sure to include its associated Products
-  try{
-    
+  try {  
   const singleCategory = await Category.findOne({where: {id: req.params.id}, include: [Product]});
 
-  if(!singleCategory) {
+  if (!singleCategory) {
     res.status(400).json({message: 'No category found with this ID! '});
   }
-  res.status(200).json(singleCategory);
+    res.status(200).json(singleCategory);
   } 
 
   catch(err){ res.status(500).json(err);}
 });
+
 
 router.post('/', async (req, res) => {
   try{
@@ -38,6 +37,7 @@ router.post('/', async (req, res) => {
   }
   catch(err) { res.status(400).json(err); }
 });
+
 
 //NEED TO DO
 router.put('/:id', (req, res) => {
